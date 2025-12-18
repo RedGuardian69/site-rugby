@@ -1,0 +1,175 @@
+<h1 id="-rugby-warriors---warriors-cats-official-site">🏉 Rugby Warriors - Warriors Cats Official Site</h1>
+<p>Site oficial do clube de Rugby <strong>Warriors Cats</strong>, desenvolvido como projeto educacional do curso <strong>Desenvolvedor Profissional</strong> da <strong>Hcode Treinamentos</strong>.</p>
+<h2 id="-sobre-o-projeto">📋 Sobre o Projeto</h2>
+<p>Este é um site responsivo e moderno para um clube de rugby escolar, apresentando:</p>
+<ul>
+<li><strong>Hero section</strong> com call-to-action para matrículas e participação</li>
+<li><strong>Carousel de notícias</strong> com últimas novidades do clube</li>
+<li><strong>Seção de vídeos</strong> com highlights e conteúdo dos treinos</li>
+<li><strong>Votação para mascote</strong> com 4 candidatos diferentes</li>
+<li><strong>Catálogo de times</strong> filiados ao clube</li>
+<li><strong>Menu responsivo</strong> com drawer navigation em mobile</li>
+<li><strong>Seção de patrocinadores</strong> e footer completo</li>
+</ul>
+<h2 id="-crédito-educacional">🎓 Crédito Educacional</h2>
+<p>Desenvolvido como parte do curso <strong>Desenvolvedor Profissional</strong> da <a href="https://www.hcode.com.br/">Hcode Treinamentos</a>.</p>
+<blockquote>
+<p>Este projeto foi criado a partir do curso Desenvolvedor Profissional do Hcode Treinamentos, focando em práticas modernas de desenvolvimento web front-end.</p>
+</blockquote>
+<h2 id="️-tecnologias-utilizadas">🛠️ Tecnologias Utilizadas</h2>
+<ul>
+<li><strong>HTML5</strong> - Estrutura semântica</li>
+<li><strong>CSS3</strong> - Estilos responsivos com variáveis CSS</li>
+<li><strong>JavaScript Vanilla</strong> - Interatividade (menu drawer, navegação)</li>
+<li><strong>Responsive Design</strong> - Mobile-first approach</li>
+</ul>
+<h2 id="-estrutura-do-projeto">📁 Estrutura do Projeto</h2>
+<pre><code>Project-Rugby/
+├── index.html                 # Página principal
+├── readMe.md                  # Este arquivo
+├── assets/
+│   ├── css/
+│   │   ├── style.css         # Estilos principais
+│   │   ├── variables.css     # Variáveis de cores e tamanhos
+│   │   ├── hero.css          # Seção hero
+│   │   ├── carousel.css      # Carrossel de notícias/mascotes
+│   │   ├── drawer.css        # Menu drawer mobile
+│   │   ├── footer.css        # Rodapé
+│   │   ├── normalize.css     # Reset de estilos
+│   │   └── [outros estilos]  # Estilos específicos de componentes
+│   ├── js/
+│   │   └── menu_toggle.js    # Lógica do menu drawer
+│   ├── imgs/
+│   │   ├── imgs/             # Imagens de notícias e conteúdo
+│   │   ├── sponsors/         # Logos de patrocinadores
+│   │   ├── times-logo/       # Logos dos times
+│   │   └── [ícones e assets] # Ícones SVG e imagens variadas
+│   └── fonts/                # Fontes customizadas (se houver)
+</code></pre>
+<h2 id="-como-começar">🚀 Como Começar</h2>
+<h3 id="pré-requisitos">Pré-requisitos</h3>
+<ul>
+<li>Navegador web moderno (Chrome, Firefox, Safari, Edge)</li>
+<li>Editor de código (VS Code recomendado)</li>
+</ul>
+<h3 id="instalação">Instalação</h3>
+<ol>
+<li>Clone o repositório:</li>
+</ol>
+<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/seu-usuario/Project-Rugby-main.git
+<span class="hljs-built_in">cd</span> Project-Rugby-main
+</code></pre>
+<ol start="2">
+<li>
+<p>Abra o arquivo <code>index.html</code> no navegador:</p>
+<ul>
+<li>Duplo-clique em <code>index.html</code>, ou</li>
+<li>Use uma extensão como Live Server no VS Code</li>
+</ul>
+</li>
+<li>
+<p>Para desenvolvimento com live reload, use a extensão Live Server do VS Code:</p>
+<ul>
+<li>Instale a extensão &quot;Live Server&quot; (5M+ downloads)</li>
+<li>Clique com botão direito em <code>index.html</code> → &quot;Open with Live Server&quot;</li>
+</ul>
+</li>
+</ol>
+<h2 id="-padrões-de-desenvolvimento">🎨 Padrões de Desenvolvimento</h2>
+<h3 id="convenções-css">Convenções CSS</h3>
+<ul>
+<li>Variáveis globais definidas em <code>assets/css/variables.css</code></li>
+<li>BEM (Block Element Modifier) para naming de classes</li>
+<li>Mobile-first responsive design</li>
+<li>Classes com prefixo <code>btn-</code> para botões (ex: <code>btn-primary-fill</code>, <code>btn-white-10</code>)</li>
+</ul>
+<h3 id="interatividade-javascript">Interatividade JavaScript</h3>
+<ul>
+<li>Atributos data (ex: <code>data-drawer=&quot;open&quot;</code>, <code>data-drawer=&quot;close&quot;</code>, <code>data-drawer=&quot;toggle&quot;</code>)</li>
+<li>IIFE (Immediately Invoked Function Expression) para escopo isolado</li>
+<li>Seletores com <code>querySelectorAll</code> para múltiplos elementos</li>
+<li>Listeners em <code>click</code> para controle de menu</li>
+</ul>
+<p>Exemplo de padrão em <code>menu_toggle.js</code>:</p>
+<pre><code class="language-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;[data-drawer=&quot;open&quot;]&#x27;</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> {
+    item.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, toggleDrawer);
+});
+</code></pre>
+<h3 id="estrutura-html">Estrutura HTML</h3>
+<ul>
+<li>Seções semânticas (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code>)</li>
+<li>IDs em seções principais para navegação (ex: <code>id=&quot;drawer&quot;</code>, <code>id=&quot;hero&quot;</code>)</li>
+<li>Classes de container para centralização de conteúdo (<code>.container</code>)</li>
+<li>Estrutura de carousel com <code>.carousel</code> &gt; <code>.carousel-items</code> &gt; <code>.carousel-item</code></li>
+</ul>
+<h2 id="-fluxo-de-desenvolvimento">🔄 Fluxo de Desenvolvimento</h2>
+<ol>
+<li><strong>Editar HTML</strong> em <code>index.html</code> para adicionar conteúdo</li>
+<li><strong>Estilos</strong> - adicione ou modifique CSS em <code>assets/css/</code></li>
+<li><strong>Lógica</strong> - novos scripts em <code>assets/js/</code> ou em <code>menu_toggle.js</code></li>
+<li><strong>Imagens</strong> - coloque em <code>assets/imgs/</code> (organize por tipo)</li>
+<li><strong>Teste responsivo</strong> usando DevTools (F12) e rotas de viewport</li>
+</ol>
+<h2 id="-componentes-principais">📱 Componentes Principais</h2>
+<h3 id="menu-drawer-mobile-navigation">Menu Drawer (Mobile Navigation)</h3>
+<ul>
+<li>Ativado via atributos <code>data-drawer</code></li>
+<li>Toggle de classe <code>.opened</code> no elemento <code>#drawer</code></li>
+<li>Overlay clicável para fechar</li>
+</ul>
+<h3 id="carousel">Carousel</h3>
+<ul>
+<li>HTML structure com <code>.carousel</code> container</li>
+<li>Reutilizável para notícias, vídeos e mascotes</li>
+<li>Estilo definido em <code>carousel.css</code></li>
+</ul>
+<h3 id="hero-section">Hero Section</h3>
+<ul>
+<li>Destaque principal com logo e CTA buttons</li>
+<li>Responsivo com menu do header</li>
+</ul>
+<h3 id="footer">Footer</h3>
+<ul>
+<li>Múltiplas seções de navegação</li>
+<li>Links para times filiados</li>
+<li>Social media links</li>
+</ul>
+<h2 id="-troubleshooting">🐛 Troubleshooting</h2>
+<p><strong>Menu drawer não funciona?</strong></p>
+<ul>
+<li>Verifique se <code>menu_toggle.js</code> está carregado antes de <code>&lt;/body&gt;</code></li>
+<li>Confirme que os atributos <code>data-drawer</code> estão corretos</li>
+</ul>
+<p><strong>Imagens não carregam?</strong></p>
+<ul>
+<li>Verifique os caminhos em <code>src=&quot;assets/imgs/...&quot;</code></li>
+<li>Use caminhos relativos a partir da raiz do projeto</li>
+</ul>
+<p><strong>Layout desalinhado?</strong></p>
+<ul>
+<li>Limpe o cache do navegador (Ctrl+Shift+Delete)</li>
+<li>Verifique se <code>normalize.css</code> está sendo carregado</li>
+</ul>
+<h2 id="-contribuindo">🤝 Contribuindo</h2>
+<p>Para contribuir com melhorias:</p>
+<ol>
+<li>Faça um fork do projeto</li>
+<li>Crie uma branch para sua feature (<code>git checkout -b feature/AmazingFeature</code>)</li>
+<li>Commit suas mudanças (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+<li>Push para a branch (<code>git push origin feature/AmazingFeature</code>)</li>
+<li>Abra um Pull Request</li>
+</ol>
+<h2 id="-recursos-adicionais">📚 Recursos Adicionais</h2>
+<ul>
+<li><a href="https://www.hcode.com.br/">Hcode Treinamentos - Curso Desenvolvedor Profissional</a></li>
+<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">MDN - HTML5 Semântica</a></li>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks - Responsive Design</a></li>
+<li><a href="https://javascript.info/">JavaScript.info - Vanilla JS</a></li>
+</ul>
+<h2 id="-licença">📄 Licença</h2>
+<p>Este projeto é fornecido para fins educacionais como parte do curso Hcode Treinamentos.</p>
+<h2 id="-autor">👨‍💼 Autor</h2>
+<p>Desenvolvido como projeto educacional - <strong>Hcode Treinamentos</strong> 🎓</p>
+<hr>
+<p><strong>Última atualização:</strong> Dezembro 2025<br>
+<strong>Status:</strong> ✅ Em desenvolvimento educacional</p>
