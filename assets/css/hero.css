@@ -4,7 +4,7 @@ color: var(--text-color);
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-background-image: url("/assets/imgs/imgs/Img-Header.jpg");
+background-image: url("/assets/imgs/imgs/img-header.jpg");
 background-size: cover;
 background-position: center;
 
