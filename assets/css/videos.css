@@ -17,7 +17,7 @@
             >video {
                 width: 100%;
                 background-color: rgb(97, 59, 59);
-                background-image: url("/assets/imgs/imgs/rugby-video.jpg");
+                background-image: url("../assets/imgs/imgs/rugby-video.jpg");
                 background-size: cover;
                 background-position: center;
                 height: 320px;
